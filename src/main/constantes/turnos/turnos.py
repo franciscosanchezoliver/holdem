@@ -1,0 +1,3 @@
+FLOP = 'FLOP'
+TURN = 'TURN'
+RIVER = 'RIVER'

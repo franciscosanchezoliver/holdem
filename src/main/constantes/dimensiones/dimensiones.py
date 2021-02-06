@@ -1,0 +1,52 @@
+#############
+# JUGADORES #
+#############
+
+# las dimensiones de una caja para capturar un jugador
+caja_jugador_ancho = 100
+caja_jugador_altura = 45
+
+# La posicion en la mesa de cada jugador
+JUGADOR_ABAJO_X = 445
+JUGADOR_ABAJO_Y = 455
+
+JUGADOR_IZQUIERDA_ABAJO_X = 36
+JUGADOR_IZQUIERDA_ABAJO_Y = 333
+
+JUGADOR_IZQUIERDA_ARRIBA_X = 65
+JUGADOR_IZQUIERDA_ARRIBA_Y = 130
+
+JUGADOR_ARRIBA_X = 395
+JUGADOR_ARRIBA_Y = 66 
+
+JUGADOR_DERECHA_ARRIBA_X = 774 
+JUGADOR_DERECHA_ARRIBA_Y = 128
+
+JUGADOR_DERECHA_ABAJO_X = 806 
+JUGADOR_DERECHA_ABAJO_Y = 333 
+
+##########
+# DEALER #
+##########
+# Las dimensiones de una caja para capturar el boton del dealer
+caja_dealer_ancho = 30
+caja_dealer_altura = 30
+
+# Diferentes posiciones del dealer
+DEALER_ABAJO_X = 364
+DEALER_ABAJO_Y = 389
+
+DEALER_IZQUIERDA_ABAJO_X = 175 
+DEALER_IZQUIERDA_ABAJO_Y = 288
+
+DEALER_IZQUIERDA_ARRIBA_X = 281
+DEALER_IZQUIERDA_ARRIBA_Y = 147 
+
+DEALER_ARRIBA_X = 497
+DEALER_ARRIBA_Y = 145 
+
+DEALER_DERECHA_ARRIBA_X = 729 
+DEALER_DERECHA_ARRIBA_Y = 198 
+
+DEALER_DERECHA_ABAJO_X = 682
+DEALER_DERECHA_ABAJO_Y = 354

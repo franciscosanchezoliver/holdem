@@ -1,0 +1,10 @@
+HIGH_CARD = "HIGH_CARD" # Carta Alta
+PAIR = "PAIR" # Pareja
+TWO_PAIRS = "TWO_PAIRS" # Double Pareja
+SET = "SET" # Trio
+STRAIGHT = "STRAIGHT" # Escalera
+FLUSH = "FLUSH" # Color
+FULL_HOUSE = "FULL_HOUSE" # Full
+POKER = "POKER" # Poker
+STRAIGHT_FLUSH = "STRAIGHT_FLUSH" # Escalera de Color
+ROYAL_FLUSH = "ROYAL_FLUSH" # Escalera Real
