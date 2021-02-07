@@ -1,4 +1,3 @@
-
 from math import sqrt
 
 def distancia_euclidea(punto1, punto2):
@@ -18,11 +17,13 @@ def distancia_euclidea(punto1, punto2):
     distancia = sqrt (pow((x2 - x1) , 2) + pow((y2 - y1) , 2))
     return distancia
 
-punto_central_jugador_principal = (892, 539)
-punto_central_jugador_izquierda_abajo = (506, 420)
-punto_central_jugador_izquierda_arriba = (705,227)
-punto_central_jugador_arriba = (860,152)
-punto_central_jugador_derecha_arriba = (1153, 218)
-punto_central_jugador_derecha_abajo = (1262, 420)
+
+
+#punto_central_jugador_principal = (892, 539)
+#punto_central_jugador_izquierda_abajo = (506, 420)
+#punto_central_jugador_izquierda_arriba = (705,227)
+#punto_central_jugador_arriba = (860,152)
+#punto_central_jugador_derecha_arriba = (1153, 218)
+#punto_central_jugador_derecha_abajo = (1262, 420)
 
 
