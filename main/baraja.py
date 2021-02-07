@@ -28,23 +28,24 @@ class Baraja:
 
     def barajar(self):
         random.shuffle(self.cartas)
-    
-    def robar_carta(self, carta):
-        carta_buscada = self.buscar_carta(carta) 
-        if carta_buscada == carta:
-            # Eliminamos de la lista de cartas que hay en la baraja
-            # ya que la hemos robado
-            self.cartas.remove(carta_buscada)
-            return carta_buscada
-        else:
-            return None
 
+    def ordenar_cartas(self):
+        self.cartas.sort()
+    
     def buscar_carta(self, carta):
-        if carta in self.cartas:
-            return carta
+        for cada_carta in self.cartas:
+            if (carta.palo == cada_carta.palo and carta.figura == cada_carta.figura):
+                return cada_carta
         else:
             mensajes.error("La carta buscada no esta en la baraja [{},{}]".format(carta.palo, str(carta.figura)))
             return None
+
+    def eliminar_carta_de_baraja(self, carta):
+        carta_eliminada = None
+        for indice, cada_carta in enumerate(self.cartas):
+            if (cada_carta.palo == carta.palo and cada_carta.figura == carta.figura):
+                carta_eliminada = self.cartas.pop(indice)
+        return carta_eliminada
 
     def get_numero_de_cartas(self):
         return len(self.cartas)

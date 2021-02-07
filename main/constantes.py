@@ -11,6 +11,24 @@ RIVER = 'RIVER'
 # Figuras
 FIGURAS = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"]
 
+# Se le asocia un peso a cada carta para poder hacer una comparacion
+# de mayor y menor entre ellas
+FIGURAS_PESO = {
+    "2"  : 1,
+    "3"  : 2,
+    "4"  : 3,
+    "5"  : 4,
+    "6"  : 5,
+    "7"  : 6,
+    "8"  : 7,
+    "9"  : 8,
+    "10" : 9,
+    "J"  : 10,
+    "Q"  : 11,
+    "K"  : 12,
+    "A"  : 13
+}
+
 # Palos
 HEART = "HEART" # Corazones
 DIAMONDS = "DIAMONDS" # Diamantes
@@ -30,6 +48,8 @@ FULL_HOUSE = "FULL_HOUSE" # Full
 POKER = "POKER" # Poker
 STRAIGHT_FLUSH = "STRAIGHT_FLUSH" # Escalera de Color
 ROYAL_FLUSH = "ROYAL_FLUSH" # Escalera Real
+COMBINACIONES = [HIGH_CARD, PAIR, TWO_PAIRS, SET, STRAIGHT, FLUSH, FULL_HOUSE, POKER, STRAIGHT_FLUSH,ROYAL_FLUSH]
+
 
 #############
 # MESA DE 6 #

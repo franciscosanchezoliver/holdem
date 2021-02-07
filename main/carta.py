@@ -1,5 +1,5 @@
 from excepciones import FiguraCartaError, TipoCartaError
-from constantes import PALOS, FIGURAS, HEART, DIAMONDS, CLUB, SPADE
+from constantes import PALOS, FIGURAS, HEART, DIAMONDS, CLUB, SPADE, FIGURAS_PESO
 from termcolor import colored
 
 class Carta:
@@ -35,6 +35,26 @@ class Carta:
 
         if self.palo == SPADE:
             print(str(self.figura) + '♠' )
-        
+
+    
     def __eq__(self, otra_carta):
-        return self.palo == otra_carta.palo and self.figura == otra_carta.figura
+        """
+        Metodo para comparar si 2 cartas son iguales
+        """
+        return self.figura == otra_carta.figura
+    
+    def __ne__(self, otra_carta):
+        """
+        Metodo para comparar si 2 cartas son distintas
+        """
+        return not self.__eq__(otra_carta)
+
+    def __lt__(self, other):
+        figura_carta1 = self.figura
+        figura_carta2 = other.figura
+        peso1 = FIGURAS_PESO[str(figura_carta1)]
+        peso2= FIGURAS_PESO[str(figura_carta2)]
+        return peso1 < peso2
+    
+    def __gt__(self, other):
+        return not self.__lt__(other)
